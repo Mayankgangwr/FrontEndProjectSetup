@@ -1,0 +1,80 @@
+.InputField {
+    @apply mb-2;
+
+    &.horizontalLabelInputField {
+        @apply flex items-center justify-start;
+
+        >label {
+            @apply w-[8.5rem];
+        }
+
+        >span {
+            @apply w-full;
+        }
+    }
+
+    >label {
+        @apply font-medium font-serif text-base mb-0 pb-0;
+    }
+
+    >span {
+        @apply bg-[#ebebeb] border-none rounded-[4px];
+
+        >input {
+            @apply text-gray-950 border-none rounded-[4px];
+            background-color: #ebebeb;
+        }
+
+        >input:-internal-autofill-selected {
+            background-color: #ebebeb !important;
+        }
+    }
+
+    >div {
+        @apply text-red-700 text-[13px]
+    }
+}
+
+.checkBox {
+    @apply flex items-center h-[12px] gap-1;
+
+    >label {
+        @apply m-0 p-0 text-[10px] mt-[1px];
+
+    }
+
+    >div {
+        @apply m-0 w-[11px] h-[11px];
+    }
+}
+
+.Dropdown {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 7px !important;
+    background-color: #f3f2f1 !important;
+    border: none !important;
+
+    >div {
+        width: 100% !important;
+
+        >div {
+            >button {
+                >span {
+                    color: rgb(48, 48, 48);
+                }
+            }
+        }
+
+        >ul {
+            width: 100% !important;
+        }
+    }
+}
+
+.DropdownListbox {
+    padding: 8px 0px 6px 0px !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #fff !important;
+}

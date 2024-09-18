@@ -1,0 +1,23 @@
+.Container {
+    @apply px-2 pt-2;
+    background-color: #eff3f4;
+
+}
+
+.Logo {
+    font-size: 27px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+
+    >span {
+        @apply text-purple-700;
+        font-size: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+}
+
+
+.AlertMessage {
+    @apply bg-[#dfdfdf] rounded-2xl px-1 py-1 gap-2;
+}

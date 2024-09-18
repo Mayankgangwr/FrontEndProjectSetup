@@ -1,0 +1,34 @@
+.MobileLayout {
+    @apply lg:hidden;
+}
+
+.DesktopLayout {
+    @apply hidden lg:flex w-full h-full;
+
+    >.Sidebar {
+        @apply md:w-[25%] lg:w-[18%] xl:w-[13%] shadow-sm fixed;
+        height: 100vh;
+    }
+
+    >.DesktopHeader {
+        @apply md:ml-[25%] lg:ml-[18%] xl:ml-[13%] md:w-[75%] lg:w-[82%] xl:w-[87%] h-full;
+    }
+}
+
+// MenuItem Styling
+
+.MenuItem {
+    @apply w-[90%] gap-3 my-[8px] px-3 py-[6px] rounded-xl;
+
+    &.Active{
+        @apply bg-[#879fff] text-white;
+    }
+
+    >svg {
+        @apply text-[21px];
+    }
+
+    >span {
+        @apply font-medium text-lg;
+    }
+}

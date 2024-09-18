@@ -1,0 +1,52 @@
+//Styling for header
+.Container {
+    @apply px-1 md:px-2 lg:px-3 xl:px-4 pt-2 fixed md:w-[75%] lg:w-[82%] xl:w-[87%] z-10;
+    background-color: #eff3f4;
+    &.Scrolled{
+        @apply shadow-md shadow-gray-200;
+    }
+}
+
+.Header {
+    @apply text-4xl font-semibold;
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+    font-weight: 600 !important;
+}
+.BrandName{
+    @apply text-gray-700;
+    font-size: 3rem !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+}
+
+.Time {
+    @apply text-gray-500;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.75rem !important;
+}
+
+
+.ThemeManage,
+.AlertMessage {
+    @apply bg-[#dfdfdf] rounded-2xl px-2 py-1 gap-3;
+}
+.AlertMessage{
+    padding: 4px !important;
+    border-radius: 50% !important;
+}
+
+
+//Styling for Sidebar
+
+.Sidebar{
+    @apply w-full h-[100vh] pt-5 pb-8 bg-white;
+}
+
+.LoggedStatusContainer{
+   @apply relative;
+   >.MenuList{
+    // @apply absolute;
+   }
+}

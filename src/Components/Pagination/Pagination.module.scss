@@ -1,0 +1,35 @@
+.Pagination {
+    @apply flex gap-2 items-center shadow-md shadow-gray-200 px-2 py-[6px] mt-2 w-fit bg-gray-100 rounded-lg;
+
+    .Back,
+    .Next,
+    .Pages {
+        @apply w-8 h-8 flex justify-center items-center gap-2 bg-white rounded-[50%] text-sm font-medium shadow-gray-200 shadow-md;
+
+        &:hover {
+            background-color: #006be9 !important;
+            color: #fff;
+        }
+    }
+
+    .Back,
+    .Next {
+        font-weight: 600;
+    }
+
+    .Active {
+        background-color: #006be9 !important;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .InActive {
+        @apply text-gray-400;
+
+        &:hover {
+            @apply text-gray-400 cursor-not-allowed;
+            background-color: #ffffff !important;
+
+        }
+    }
+}

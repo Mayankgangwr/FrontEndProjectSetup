@@ -1,0 +1,242 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.TableContainer {
+    background-color: #F5F5F5;
+    width: 100%;
+
+    >.TableOuterBox {
+        display: flex;
+        padding: 12px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 4px 4px 0px 0px;
+        border-bottom: 1px solid #EEE;
+        background: #FFF;
+
+        >.TableItemCount {
+            color: #616161;
+            font-family: "Segoe UI";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        >.TableSearchField {
+            border-radius: 3px;
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 276px;
+            height: 32px;
+            border: none;
+            color: #8A8A8A;
+            font-family: "Segoe UI";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+}
+
+// Styling for pagintion
+
+.PaginationContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    gap: 2px;
+    padding: 12px;
+    border-bottom: 1px solid #EEE;
+    background: #FFF;
+
+    >.Button {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: #F5F5F5;
+        color: #616161;
+        text-align: center;
+        font-family: "Segoe UI", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+
+        &.CurrentPage {
+            border: 1px solid #6264A7;
+        }
+    }
+
+    >.Dropdown {
+        border: none !important;
+        margin-left: 5px;
+        min-width: 88px;
+        height: 31px;
+        border-radius: 4px;
+        background-color: #F5F5F5 !important;
+        color: #616161;
+
+        .DropdownOption {}
+    }
+}
+
+.UITable {}
+
+.Thead {}
+
+.Th {
+    border-right: 1px solid #D0D2FF;
+    background: #E8EBFA;
+}
+
+.OuterBox {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+
+    >.InnerBox {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 80% !important;
+        gap: 5px;
+        cursor: pointer;
+
+        >.Title {
+            color: #616161;
+            font-family: "Segoe UI";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        >svg {}
+    }
+
+    >svg {
+        cursor: pointer;
+    }
+}
+
+
+.Tbody {
+    >.Tr {
+        height: fit-content !important;
+        border-bottom: 1px solid #EEE;
+        background: #FFF;
+        // background-color: #FFFFFF;
+        // border-bottom: 1px solid #F0F0F0;
+
+        >.Td {
+            height: inherit !important;
+            padding: 8px 12px !important;
+            color: var(--Light-Theme-Text-Secondary, #484644);
+            font-family: "Segoe UI";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+}
+
+// Styling for Fiter Popover
+.FiterPopoverBtn {
+    height: 25px;
+    width: 25px;
+    background-color: #D0D2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.PopoverSurface {
+    padding: 0 !important;
+}
+
+// Styling for Fiter Popover Content
+.FiterPopoverContent {
+    background-color: #FFFFFF;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    >.FieldBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+
+        >.Dropdown {
+            border: none !important;
+            height: 31px;
+            border-radius: 3px;
+            background-color: #ededed !important;
+
+            .DropdownOption {}
+        }
+
+        >.Input {
+            border: none !important;
+            height: 31px;
+            border-radius: 3px;
+            background-color: #ededed !important;
+            width: 100%;
+        }
+    }
+
+    >.ActionBtnBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        >button {
+            border-radius: 4px;
+            border: none;
+            text-align: center;
+            font-family: "Segoe UI";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        >.Apply {
+            background-color: #5B5FC7 !important;
+            color: var(--Light-theme-Rest-Foreground-Default-Foreground-3, #FFF);
+            font-weight: 600;
+        }
+
+        >.Clear {
+            color: #6264A7;
+            background-color: #ededed !important;
+        }
+    }
+
+
+
+}
+
+.DateRange {
+    display: flex;
+    align-items: center;
+}

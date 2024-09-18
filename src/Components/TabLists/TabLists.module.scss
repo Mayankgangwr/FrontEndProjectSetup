@@ -1,0 +1,19 @@
+.TabListContainer {
+    @apply block text-xl text-center font-semibold;
+}
+
+.Tabs {
+    @apply h-8;
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+
+    &::after {
+        left: 2px !important;
+        right: 2px !important;
+    }
+
+    &::before {
+        left: 2px !important;
+        right: 2px !important;
+    }
+}

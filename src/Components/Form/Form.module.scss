@@ -1,0 +1,246 @@
+// Form Header styling
+.FormHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+
+  >.HeaderText {
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    display: block;
+  }
+
+  >.Description {
+    font-family: Segoe UI;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 23px;
+    padding-left: 0px !important;
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    line-clamp: 6 !important;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.Container {
+  @apply h-[100vh] flex justify-center;
+  background-color: #eff3f4 !important;
+
+  >.StepperForm {
+    @apply bg-white mt-[80px] w-96 h-fit p-4 pb-10 shadow-slate-400 rounded-md shadow-md;
+  }
+}
+
+.formHeader {
+  @apply text-slate-900 tracking-tight font-sans text-3xl font-extrabold mt-2 mb-5 text-center;
+}
+
+.automationStepper {
+  margin: 24px 0 32px !important;
+
+  .p-steps {
+    ul {
+      display: flex;
+      gap: 4px;
+    }
+
+    .p-steps-item {
+      flex: 1 0 0;
+      display: block;
+
+      &::before {
+        background: #d5d6ed;
+        width: 100%;
+        border-radius: 50px;
+        height: 5px;
+        border: none;
+        position: static;
+        margin: 0 0 8px;
+      }
+
+      .p-menuitem-link {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 4px;
+
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+
+      .p-steps-number {
+        height: 16px;
+        line-height: 0;
+        width: 16px;
+        border: 2px solid #898a9f;
+        min-width: 0;
+        font-size: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 16px;
+        background: transparent !important;
+      }
+
+      .p-steps-title {
+        color: #898a9f;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        margin: 0 !important;
+      }
+
+      &.p-steps-current {
+        &::before {
+          background: rgba(91, 95, 199, 1);
+        }
+
+        .p-steps-number {
+          border: 6px solid rgba(91, 95, 199, 1);
+        }
+
+        .p-steps-title {
+          color: #5b5fc7;
+        }
+      }
+    }
+  }
+
+  &+div {
+    min-height: 240px;
+  }
+}
+
+.Steps {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  button {
+    flex: 1 0 0;
+    color: #898a9f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 !important;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-top: 13px;
+
+    &::before {
+      content: '';
+      height: 16px;
+      line-height: 0;
+      width: 16px;
+      border: 2px solid #898a9f;
+      min-width: 0;
+      font-size: 0;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 16px;
+      background-color: transparent !important;
+      border-radius: 50px;
+      box-sizing: border-box;
+      transition: 0.2s all ease;
+    }
+
+    &::after {
+      content: '';
+      background: #d5d6ed;
+      width: 100%;
+      border-radius: 50px;
+      height: 4px;
+      border: none;
+      position: static;
+      margin: 0 0 8px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      transition: 0.2s all ease;
+    }
+
+    &:hover {
+      background: unset;
+    }
+  }
+
+  .activeChipsClass {
+    color: #5B5FC7;
+
+    &::before {
+      border: 6px solid rgb(91, 95, 199);
+    }
+
+    &::after {
+      background: rgb(91, 95, 199);
+    }
+  }
+
+  .completedChipsClass {
+    color: #58596D;
+
+    &::before {
+      background: url("./icn-check.svg") no-repeat center;
+      border-color: rgb(91, 95, 199);
+    }
+
+    &::after {
+      background: rgb(91, 95, 199);
+    }
+  }
+}
+
+
+.FormButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(209, 209, 209, 0.43);
+  padding-top: 22px;
+  margin-top: 25px;
+
+  &.SingleBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.LinkButton {
+  background: transparent !important;
+  border: none;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  color: #5b5fc7 !important;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  gap: 4px;
+}
+
+.link {
+  color: #3b82f6;
+}
+
+.link:hover {
+  text-decoration-line: underline;
+}
